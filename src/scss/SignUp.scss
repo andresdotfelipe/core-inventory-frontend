@@ -1,0 +1,17 @@
+.sign-up {
+    align-items: center;  
+    background-color: $snow;   
+    padding-top: 65px;    
+
+    .sign-up-form {
+        max-width: 350px;    
+        width: 100%;
+    }    
+
+    @include small-devices {
+
+        .sign-up-form {
+            max-width: 300px;                
+        }           
+    }
+}

@@ -1,0 +1,44 @@
+.header {       
+    
+    .navbar {       
+        background-color: $white;    
+        border-bottom: 2px solid $white-smoke;
+        margin: 0 -15px;
+        padding: 9px 35px;     
+    
+        .brand {         
+            color: $denim;
+            font-size: 32px;
+            font-weight: 600;            
+            padding-bottom: 10px;
+            padding-right: 30px;
+            text-decoration: none;
+        }
+    
+        .mr-auto {
+            padding-left: 0px;
+        }
+    
+        .nav-link {
+            font-size: 18px;
+            margin: 0 15px 0 0;            
+        }
+    }
+    
+    .header-logged-out {
+        align-items: center;
+        background-color: $white;
+        border-bottom: 2px solid $white-smoke;
+        padding: 15px 20px;    
+        text-align: center;
+
+        .brand {
+    
+            h1{
+                color: $denim;
+                font-size: 32px;
+                font-weight: 600;   
+            }            
+        } 
+    }
+}

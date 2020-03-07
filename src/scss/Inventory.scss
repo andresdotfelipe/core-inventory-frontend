@@ -1,0 +1,68 @@
+.inventory {    
+    text-align: center;
+
+    .category-bar {
+        
+        .btn-primary {
+            border-color: $white;
+        }
+    
+        .btn-group, .btn-group-vertical {
+            position: relative;
+            display: inline-flex;
+            vertical-align: middle;
+            padding: 10px;            
+            margin: 0 auto 0;
+            max-width: 810px;
+            width: 100%;
+        }
+    }
+
+    .search-bar {
+        
+        .input-group {
+            margin: 20px auto 0;
+            max-width: 360px;
+            width: 100%;
+        }
+    }
+    
+    .items-grid {        
+        margin: 40px auto 100px;
+        max-width: 910px;        
+        width: 100%;
+
+        .item-box {            
+            border: 1px solid $denim;            
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px;
+            padding: 20px 10px;
+
+            img {
+                border-radius: 5px;
+                height: 100px;
+                margin-bottom: 20px;
+                width: 100px;
+            }
+
+            .badge {
+                background-color: $denim;
+                border-radius: 5px 5px 0 0;
+                color: $white;
+                font-size: 16px;
+                font-weight: 400;
+                padding: 10px 25px; 
+                width: 100%;               
+            }
+            
+            h6 {
+                font-weight: 400;                
+                background-color: $emerald;
+                border-radius: 0 0 5px 5px;
+                margin: 0;
+                padding: 10px;
+            }
+        }                    
+    }
+}
