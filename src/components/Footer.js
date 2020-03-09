@@ -1,16 +1,16 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 
 const Footer = () => {
     return (
-        <Row className="justify-content-center">
+        <Row className="footer">
             <Col xs={12}>
-                <span>
-                    Site created by Andrés Felipe Pérez Rodríguez
+                <span className="text">
+                    Web site created by Andrés Felipe Pérez Rodríguez
                 </span>
             </Col>
             <Col xs={12}>
-                <span>
+                <span className="year">
                     {new Date().getFullYear()}
                 </span>                
             </Col>
