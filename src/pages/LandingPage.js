@@ -5,6 +5,7 @@ import { logIn, getSession, setPathname } from '../actions/users';
 import { Col, Row } from 'react-bootstrap';
 import DevicesImg from '../assets/images/devices.png';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import LogInForm from '../forms/LogInForm';
 
 class LandingPage extends PureComponent {
@@ -52,7 +53,8 @@ class LandingPage extends PureComponent {
                     <Col xs={12} md={6} lg={5} className="log-in-form">   
                         <LogInForm submitLogIn={this.handleSubmitLogIn} />                 
                     </Col>                                
-                </Row>            
+                </Row>    
+                <Footer />
             </React.Fragment>
         );
     }
