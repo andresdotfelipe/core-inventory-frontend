@@ -11,7 +11,7 @@ const Footer = () => {
             </Col>
             <Col xs={12}>
                 <span>
-                    {(new Date).getFullYear()}
+                    {new Date().getFullYear()}
                 </span>                
             </Col>
         </Row>                
