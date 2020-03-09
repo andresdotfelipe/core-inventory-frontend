@@ -1,3 +1,13 @@
-.footer {
+.footer {      
+    margin: 10px 0 15px;
     text-align: center;
+
+    a {
+        color: $mako;
+        text-decoration: none;
+    }
+
+    @include phones {
+        font-size: 13px;
+    }
 }
