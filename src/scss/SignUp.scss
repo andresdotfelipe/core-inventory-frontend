@@ -8,7 +8,7 @@
         width: 100%;
     }    
 
-    @include small-devices {
+    @include phones {
 
         .sign-up-form {
             max-width: 300px;                

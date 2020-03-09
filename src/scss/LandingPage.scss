@@ -32,7 +32,7 @@
         width: 100%;
     }
     
-    @include small-devices {
+    @include phones {
 
         padding: 40px 0px; 
 
@@ -52,7 +52,7 @@
         }    
     }
        
-    @include phones {
+    @include large-phones {
 
         padding: 40px 0px;
 
