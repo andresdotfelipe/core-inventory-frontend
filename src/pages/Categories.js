@@ -7,6 +7,7 @@ import { getCategories, setCategory, createCategory, updateCategory, deleteCateg
 import { Alert, Badge, Button, Col, Container, Row } from 'react-bootstrap';
 import Loader from 'react-loader-spinner';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import CategoryForm from '../forms/CategoryForm';
 import DeleteConfirmation from '../components/DeleteConfirmation';
 
@@ -280,6 +281,7 @@ class Categories extends PureComponent {
                                 </Col>
                             }                     
                         </Container>
+                        <Footer />
                     </React.Fragment>
                 }
             </React.Fragment>
