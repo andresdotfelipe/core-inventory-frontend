@@ -13,7 +13,7 @@ class LogInForm extends PureComponent {
         return (                
             <React.Fragment>
                 <Row className="justify-content-center justify-content-lg-start">                                
-                    <Col xs={8} className="form">
+                    <Col className="form">
                         <Form>
                             <Form.Text className="form-title">Log In</Form.Text>
                             <Form.Row>                                                                                                                       
