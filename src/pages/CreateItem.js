@@ -8,6 +8,7 @@ import { createItem } from '../actions/items';
 import { Alert, Col, Container, Row } from 'react-bootstrap';
 import Loader from 'react-loader-spinner';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import ItemForm from '../forms/ItemForm';
 
 class CreateItem extends PureComponent {
@@ -79,6 +80,7 @@ class CreateItem extends PureComponent {
                                 </Col>
                             }
                         </Container>
+                        <Footer />
                     </React.Fragment>
                 }
             </React.Fragment>            
