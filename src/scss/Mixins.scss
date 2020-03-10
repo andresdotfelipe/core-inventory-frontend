@@ -17,3 +17,7 @@
 @mixin large-desktops {
     @media (min-width: 1200px) { @content; }
 }
+
+@mixin containerPadding {
+    padding: 80px 0 120px;
+}
