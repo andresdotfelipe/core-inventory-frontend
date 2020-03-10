@@ -8,6 +8,8 @@ html {
     background-color: #fbfbfb;
 }
 
- .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
     background-color: #fbfbfb;
+    min-height: 100vh;
+    position: relative;   
 }
