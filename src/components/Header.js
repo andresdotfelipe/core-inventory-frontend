@@ -20,7 +20,7 @@ class Header extends PureComponent {
                     {
                         session ?
                         <React.Fragment>
-                            <Navbar expand="lg">
+                            <Navbar expand="lg" fixed="top">
                                 <Link to="/inventory" className="brand">Core Inventory</Link>
                                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                                 <Navbar.Collapse id="basic-navbar-nav">
