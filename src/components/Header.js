@@ -25,17 +25,22 @@ class Header extends PureComponent {
                                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                                 <Navbar.Collapse id="basic-navbar-nav">
                                     <Nav className="mr-auto">
-                                    <Link className="nav-link" to="/inventory">View inventory</Link>
-                                    <Link className="nav-link" to="/categories">Categories</Link>
-                                    <Link className="nav-link" to="/create-item">Create item</Link>                    
+                                        <Link className="nav-link" to="/inventory">View inventory</Link>
+                                        <Link className="nav-link" to="/categories">Categories</Link>
+                                        <Link className="nav-link" to="/create-item">Create item</Link>                    
                                     </Nav>                    
-                                    <Button variant="outline-primary" onClick={this.handleLogOut}>Log Out</Button>                    
+                                    <Button 
+                                        variant="outline-primary" 
+                                        className="log-out-button" 
+                                        onClick={this.handleLogOut}>
+                                        Log Out
+                                    </Button>                    
                                 </Navbar.Collapse>
                             </Navbar>
                         </React.Fragment> :
                         <Row className="header-logged-out">            
                             <Col xs={12} className="brand">   
-                                <h1>Core Inventory</h1>
+                                <Link to="/" className="brand">Core Inventory</Link>
                             </Col>  
                         </Row>
                     }                                                               
