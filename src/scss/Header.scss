@@ -22,7 +22,7 @@
         .nav-link {
             font-size: 18px;
             margin: 0 15px 0 0;            
-        }
+        }        
     }
     
     .header-logged-out {
@@ -32,13 +32,32 @@
         padding: 15px 20px;    
         text-align: center;
 
-        .brand {
-    
-            h1{
-                color: $denim;
-                font-size: 32px;
-                font-weight: 600;   
-            }            
+        .brand {                
+            color: $denim;
+            font-size: 32px;
+            font-weight: 600;
+            text-decoration: none;
         } 
+    }
+
+    @include phones {
+
+        .log-out-button {
+            margin: 12px 0 15px;
+        }
+    }
+
+    @include large-phones {
+
+        .log-out-button {
+            margin: 12px 0 15px;
+        }
+    }
+
+    @include tablets {
+
+        .log-out-button {
+            margin: 12px 0 15px;
+        }
     }
 }
