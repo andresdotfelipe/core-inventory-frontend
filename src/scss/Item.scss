@@ -1,74 +1,78 @@
 .item {
-    background-color: $white;
-    border: 1px solid $denim;
-    border-radius: 5px;
-    margin: 60px auto;
-    max-width: 750px;    
-    text-align: center;   
-    width: 100%;  
-    
-    img {
-        height: 280px;        
-        width: 300px;
-    }
+    padding-bottom: $containerPaddingBottom;
 
-    .options {         
-
-        .btn-info, .btn-danger {
-            margin: 35px 0;
-            width: 115px;
-        }
-    }
-
-    .quantity {
-        margin-top: 25px;       
+    .item-detail {
+        background-color: $white;
+        border: 1px solid $denim;
+        border-radius: 5px;
+        margin: 60px auto 0;
+        max-width: 750px;
+        text-align: center;   
+        width: 100%;
         
-        .col-auto {
-            padding: 0;
+        img {
+            height: 280px;        
+            width: 300px;
         }
-
-        .btn[disabled] {
-            cursor: default;
+    
+        .options {         
+    
+            .btn-info, .btn-danger {
+                margin: 35px 0;
+                width: 115px;
+            }
         }
-
-        .btn-primary, .btn-secondary {
-            font-weight: bolder;            
-            width: 50px;
+    
+        .quantity {
+            margin-top: 25px;       
+            
+            .col-auto {
+                padding: 0;
+            }
+    
+            .btn[disabled] {
+                cursor: default;
+            }
+    
+            .btn-primary, .btn-secondary {
+                font-weight: bolder;            
+                width: 50px;
+            }
+    
+            .btn-primary {      
+                border-radius: 4px 0 0 4px;                  
+            }
+    
+            .btn-secondary {      
+                border-radius: 0 4px 4px 0;            
+            }
+    
+            .btn-success, .btn-dark {
+                margin: 15px 5px 0px;
+                width: 100px;
+            }        
+    
+            input {
+                border-radius: 0;
+                text-align: center;
+                width: 150px;            
+            }
         }
-
-        .btn-primary {      
-            border-radius: 4px 0 0 4px;                  
+    
+        .info {
+            padding: 40px;
+    
+            .card {            
+                margin-top: 20px;
+            }        
+    
+            .card-body {
+                align-items: center;
+                display: flex;
+                font-size: 17px;
+                height: 95px;                
+                justify-content: center;
+            }
         }
-
-        .btn-secondary {      
-            border-radius: 0 4px 4px 0;            
-        }
-
-        .btn-success, .btn-dark {
-            margin: 15px 5px 0px;
-            width: 100px;
-        }        
-
-        input {
-            border-radius: 0;
-            text-align: center;
-            width: 150px;            
-        }
-    }
-
-    .info {
-        padding: 40px;
-
-        .card {            
-            margin-top: 20px;
-        }        
-
-        .card-body {
-            display: flex;
-            font-size: 17px;
-            height: 95px;
-            align-items: center;
-            justify-content: center;
-        }
-    }    
+    }        
 }

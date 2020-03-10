@@ -1,6 +1,7 @@
 .categories {
     margin: 0 auto;
-    max-width: 970px;        
+    max-width: 970px;  
+    padding-bottom: $containerPaddingBottom;
     text-align: center;
     width: 100%;      
 
@@ -26,7 +27,7 @@
     }
     
     .categories-list {
-        margin: 35px auto 100px;                
+        margin: 35px auto 0;                
         text-align: left;        
         word-wrap: break-word;  
 
@@ -48,7 +49,6 @@
                 width: 100%;
             }
         }
-        
         
         .badge {
             background-color: $azure;
