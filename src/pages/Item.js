@@ -8,6 +8,7 @@ import { getItem, updateItemQuantity, deleteItem } from '../actions/items';
 import { Button, Card, Col, Container, Image, Row } from 'react-bootstrap';
 import Loader from 'react-loader-spinner';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import DeleteConfirmation from '../components/DeleteConfirmation';
 
 class Item extends PureComponent {
@@ -135,8 +136,8 @@ class Item extends PureComponent {
                         <Header />                        
                         {
                             item ?
-                            <Container>
-                                <Row className="item">
+                            <Container className="item">
+                                <Row className="item-detail">
                                     <Col xs={12} className="page-title">
                                         <span>{item.name}</span>
                                     </Col>
@@ -303,6 +304,7 @@ class Item extends PureComponent {
                                 <span>Item not found</span>
                             </Col>
                         }
+                        <Footer />
                     </React.Fragment>
                 }
             </React.Fragment>            
