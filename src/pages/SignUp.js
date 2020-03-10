@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { signUp, getSession, setPathname } from '../actions/users';
 import { Col, Row } from 'react-bootstrap';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import SignUpForm from '../forms/SignUpForm';
 
 class SignUp extends PureComponent {
@@ -31,7 +32,8 @@ class SignUp extends PureComponent {
                     <Col xs={12} className="sign-up-form">
                         <SignUpForm submitSignUp={this.handleSubmitSignUp} />                
                     </Col>                    
-                </Row>                
+                </Row>
+                <Footer />               
             </React.Fragment>
         );
     }

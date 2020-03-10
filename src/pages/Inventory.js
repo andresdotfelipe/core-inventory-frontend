@@ -6,6 +6,7 @@ import { setItem, getItems, searchItem } from '../actions/items';
 import { Badge, Button, ButtonGroup, Col, Container, FormControl, InputGroup, Row} from 'react-bootstrap';
 import Loader from 'react-loader-spinner';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import CategoriesModal from '../views/modals/CategoriesModal';
 
 class Inventory extends PureComponent {
@@ -143,6 +144,7 @@ class Inventory extends PureComponent {
                                 </Col>
                             }                    
                         </Container>
+                        <Footer />
                     </React.Fragment>
                 }                               
             </React.Fragment>

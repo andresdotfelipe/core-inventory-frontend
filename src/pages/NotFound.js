@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Col, Row } from 'react-bootstrap';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const NotFound = ({ history }) => {
 
@@ -17,7 +18,8 @@ const NotFound = ({ history }) => {
                     <p>This page does not exist</p>
                     <Button onClick={handleOnClick}>Go back to main page</Button>
                 </Col>
-            </Row>            
+            </Row>
+            <Footer />
         </React.Fragment>        
     );
 };

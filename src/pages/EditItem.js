@@ -7,6 +7,7 @@ import { getItem, updateItem, updateItemImage } from '../actions/items';
 import { Alert, Col, Container, Row } from 'react-bootstrap';
 import Loader from 'react-loader-spinner';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import ItemForm from '../forms/ItemForm';
 
 class EditItem extends PureComponent {
@@ -105,7 +106,8 @@ class EditItem extends PureComponent {
                             <Col xs={12} className="resource-not-found">
                                 <span>Item not found</span>
                             </Col>
-                        }                        
+                        } 
+                        <Footer />                       
                     </React.Fragment>
                 }
             </React.Fragment>            
