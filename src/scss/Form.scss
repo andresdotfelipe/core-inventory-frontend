@@ -1,9 +1,10 @@
 .form {
     border: 1px solid $cornflower-blue;
     background-color: $white;
-    border-radius: 5px;           
+    border-radius: 5px;
+    max-width: 320px;           
     padding: 40px;
-    text-align: center;
+    text-align: center;    
 
     .form-title {
         font-size: 23px;
