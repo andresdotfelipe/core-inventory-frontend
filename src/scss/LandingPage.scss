@@ -1,12 +1,10 @@
 .landing-page {
-    background-color: $snow;   
-    padding: 60px 35px 0;  
-    padding-bottom: $containerPaddingBottom;
-    align-items: center;
+    align-items: center;    
+    padding: 40px 35px 120px;   
     
-    .hero{        
-        padding: 0 65px;
-        text-align: center;        
+    .hero {
+        padding: 0 65px 0 120px;
+        text-align: left;
 
         h2 {    
             color: $cornflower-blue;            
@@ -35,9 +33,11 @@
     
     @include phones {
 
-        padding: 40px 0px 25px; 
+        padding: 40px 0px 100px;
 
         .hero {
+            padding: 0 65px;
+            text-align: center;
             
             h2 {                    
                 font-size: 18px;          
@@ -55,9 +55,11 @@
        
     @include large-phones {
 
-        padding: 40px 0px;
+        padding: 40px 0px 110px;
 
         .hero {
+            padding: 0 65px;
+            text-align: center;
             
             h2 {                    
                 font-size: 25px;          
