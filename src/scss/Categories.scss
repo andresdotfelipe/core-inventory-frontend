@@ -1,7 +1,7 @@
 .categories {
+    @include containerPadding;
     margin: 0 auto;
-    max-width: 970px;  
-    padding-bottom: $containerPaddingBottom;
+    max-width: 970px;    
     text-align: center;
     width: 100%;      
 

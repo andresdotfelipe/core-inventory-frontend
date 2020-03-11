@@ -1,6 +1,6 @@
 .not-found {
-    margin-top: 50px;
-    padding-bottom: $containerPaddingBottom;
+    @include containerPadding;
+    margin-top: 50px;    
     text-align: center;
     
     span {

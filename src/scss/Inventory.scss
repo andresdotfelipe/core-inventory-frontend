@@ -1,5 +1,5 @@
-.inventory {    
-    padding-bottom: $containerPaddingBottom;
+.inventory {  
+    @include containerPadding;
     text-align: center;
 
     .category-bar {
