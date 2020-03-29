@@ -24,7 +24,7 @@ function* getItemsGenerator(action) {
         const session = yield select(state => state.UserReducer.session);
         if (session) {                        
             const items = yield call(ItemProvider.getItems, action.filter);
-            items = parseItemsDate();
+            items = parseItemsDate(items);
             yield put(setItems(items));
             yield put(setLoading(false));
         }       
@@ -52,7 +52,7 @@ function* searchItemGenerator(action) {
                     break;
             }        
             const items = yield call(ItemProvider.getItems, filter);
-            items = parseItemsDate();
+            items = parseItemsDate(items);
             yield put(setItems(items));
         }
     } catch (error) {         
@@ -66,7 +66,7 @@ function* getItemGenerator(action) {
         if (session) {
             yield put(setLoading(true));
             const item = yield call(ItemProvider.getItem, action.id);
-            items = parseItemsDate();
+            items = parseItemsDate(items);
             yield put(setItem(item));            
             yield put(setLoading(false));            
         }       
