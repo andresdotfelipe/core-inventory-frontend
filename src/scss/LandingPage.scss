@@ -3,29 +3,29 @@
     padding: 40px 35px 120px;   
     
     .hero {
-        padding: 0 65px 0 120px;
-        text-align: left;
+        padding-right: 45px;
+        text-align: left;        
 
         h2 {    
             color: $cornflower-blue;            
-            font-size: 60px;     
+            font-size: 55px;     
         }
 
-        p {            
-            font-size: 20px;
+        p {                        
             color: $mako;
+            font-size: 18px;
             font-weight: 350;
             margin-top: 15px;
         }
 
         img {             
             margin-top: 20px;
-            width: 80%;
+            width: 70%;
         }
     } 
 
     .log-in-form {              
-        max-width: 450px;
+        max-width: 290px;
         margin-top: 20px;
         padding: 0;
         width: 100%;
@@ -40,11 +40,11 @@
             text-align: center;
             
             h2 {                    
-                font-size: 18px;          
+                font-size: 25px;          
             }
 
             p {
-                font-size: 14px;
+                font-size: 15px;
             }
 
             img {                             
@@ -58,7 +58,7 @@
         padding: 40px 0px 110px;
 
         .hero {
-            padding: 0 65px;
+            padding: 0 65px;        
             text-align: center;
             
             h2 {                    
@@ -78,18 +78,17 @@
     @include tablets {
     
         .hero {            
-            padding: 0 25px;
             
             h2 {                    
-                font-size: 40px;          
+                font-size: 33px;          
             }
 
             p {
-                font-size: 16px;
+                font-size: 15px;
             } 
 
             img {                             
-                width: 95%;
+                width: 75%;
             }
         }
     } 

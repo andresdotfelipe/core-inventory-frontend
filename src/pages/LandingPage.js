@@ -41,16 +41,16 @@ class LandingPage extends PureComponent {
             <React.Fragment>                
                 <Header /> 
                 <Row className="landing-page justify-content-center">
-                    <Col xs={12} md={6} lg={7} className="hero">   
+                    <Col xs={12} md={6} className="hero">   
                         <Row>
                             <Col>
-                                <h2>Save, Edit, Remove and more.</h2>
+                                <h2>Save, Edit, Remove<br />and more.</h2>
                                 <p>Manage all your inventory on all digital devices.</p>
                                 <img src={DevicesImg} alt="Devices" />
                             </Col>
                         </Row>   
                     </Col>        
-                    <Col xs={12} md={6} lg={5} className="log-in-form">   
+                    <Col xs={12} md={6} className="log-in-form">   
                         <LogInForm submitLogIn={this.handleSubmitLogIn} />                 
                     </Col>                                
                 </Row>    
