@@ -11,15 +11,20 @@ import { actionTypes } from '../../config/actionTypes';
     to user.
 */
 
+const parseItemsDate = (items) => {
+    items.forEach(item => {
+        item.created = String(new Date(item.created));
+        item.modified === '0000-00-00 00:00:00' ? item.modified = 'Not modified' : item.modified = String(new Date(item.modified));
+    });
+    return items;
+};
+
 function* getItemsGenerator(action) {
     try {                
         const session = yield select(state => state.UserReducer.session);
         if (session) {                        
             const items = yield call(ItemProvider.getItems, action.filter);
-            items.forEach(item => {
-                item.created = String(new Date(item.created));
-                item.modified === '0000-00-00 00:00:00' ? item.modified = 'N/A' : item.modified = String(new Date(item.modified));
-            });               
+            items = parseItemsDate();
             yield put(setItems(items));
             yield put(setLoading(false));
         }       
@@ -47,6 +52,7 @@ function* searchItemGenerator(action) {
                     break;
             }        
             const items = yield call(ItemProvider.getItems, filter);
+            items = parseItemsDate();
             yield put(setItems(items));
         }
     } catch (error) {         
@@ -60,8 +66,7 @@ function* getItemGenerator(action) {
         if (session) {
             yield put(setLoading(true));
             const item = yield call(ItemProvider.getItem, action.id);
-            item.created = String(new Date(item.created));
-            item.modified === '0000-00-00 00:00:00' ? item.modified = 'N/A' : item.modified = String(new Date(item.modified));                                                                   
+            items = parseItemsDate();
             yield put(setItem(item));            
             yield put(setLoading(false));            
         }       
