@@ -66,7 +66,8 @@ function* getItemGenerator(action) {
         if (session) {
             yield put(setLoading(true));
             const item = yield call(ItemProvider.getItem, action.id);
-            items = parseItemsDate(items);
+            item.created = String(new Date(item.created));
+            item.modified === '0000-00-00 00:00:00' ? item.modified = 'Not modified' : item.modified = String(new Date(item.modified));
             yield put(setItem(item));            
             yield put(setLoading(false));            
         }       
