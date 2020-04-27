@@ -98,7 +98,7 @@ const InputForm = ({
                     /> 
                 }      
                 {
-                    type === 'number' &&
+                    type === 'numeric' &&
                     <Form.Control
                         isInvalid={error && touched}
                         isValid={!error && touched}
