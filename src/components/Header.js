@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { logOut, removeSession } from '../actions/users';
 import { Button, Col, Nav, Navbar, Row } from 'react-bootstrap';
+import LogoImg from '../assets/images/logo.png';
 
 class Header extends PureComponent {    
 
@@ -21,7 +22,9 @@ class Header extends PureComponent {
                         session ?
                         <React.Fragment>
                             <Navbar expand="lg" fixed="top">
-                                <Link to="/inventory" className="brand">Core Inventory</Link>
+                                <Link to="/inventory" className="brand">
+                                    <img src={LogoImg} alt="Core Inventory" width="175px" />
+                                </Link>
                                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                                 <Navbar.Collapse id="basic-navbar-nav">
                                     <Nav className="mr-auto">
@@ -40,7 +43,9 @@ class Header extends PureComponent {
                         </React.Fragment> :
                         <Row className="header-logged-out">            
                             <Col xs={12} className="brand">   
-                                <Link to="/" className="brand">Core Inventory</Link>
+                                <Link to="/" className="brand">
+                                    <img src={LogoImg} alt="Core Inventory" width="200px" />
+                                </Link>
                             </Col>  
                         </Row>
                     }                                                               
