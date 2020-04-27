@@ -7,7 +7,7 @@
 
     a {
         color: $mako;
-        text-decoration: none;
+        text-decoration: underline;
     }
 
     @include phones {
