@@ -1,22 +1,5 @@
 import React from 'react';
-import { regex } from '../config/constants';
-import { Col, Form} from 'react-bootstrap';
-
-const validateNumber = (handler) => ({ target: { value } }) => {    
-    /* 
-        Evaluates value. 
-        If there's not value, it will be asigned as '0'.
-        If there's a value, it will be tested. If it passes the test, then
-        the value will appear in the input. Otherwise it will be removed.
-    */
-    if (!value) {
-        handler('0');
-    } else if (regex.numberInput.test(value)) {
-        handler(value);
-    } else {
-        handler(value.slice(0, -1));
-    }
-};
+import { Col, Form } from 'react-bootstrap';
 
 const adaptFileEventToValue = (fileRequired, handler) =>  async ({ target: { files } }) => {    
     if (fileRequired) {
@@ -82,9 +65,17 @@ const InputForm = ({
                     <Form.Label>
                         {label}
                     </Form.Label>
-                }                     
+                }                                                                                             
                 {
-                    (type === 'text' || type === 'password') &&
+                    type === 'file' ?
+                    <Form.Control
+                        isInvalid={error && touched}
+                        isValid={!error && touched}
+                        name={name} 
+                        type={type}                            
+                        onChange={adaptFileEventToValue(fileRequired, onChange)}        
+                        onBlur={adaptFileEventToValue(fileRequired, onBlur)}
+                    /> :
                     <Form.Control
                         isInvalid={error && touched}
                         isValid={!error && touched}
@@ -95,31 +86,7 @@ const InputForm = ({
                         disabled={disabled}
                         onChange={onChange}        
                         onBlur={onBlur}
-                    /> 
-                }      
-                {
-                    type === 'numeric' &&
-                    <Form.Control
-                        isInvalid={error && touched}
-                        isValid={!error && touched}
-                        name={name} 
-                        type={type}
-                        value={value}
-                        placeholder={ph}
-                        onChange={validateNumber(onChange)}        
-                        onBlur={validateNumber(onBlur)}
-                    /> 
-                }                                                                             
-                {
-                    type === 'file' &&
-                    <Form.Control
-                        isInvalid={error && touched}
-                        isValid={!error && touched}
-                        name={name} 
-                        type={type}                            
-                        onChange={adaptFileEventToValue(fileRequired, onChange)}        
-                        onBlur={adaptFileEventToValue(fileRequired, onBlur)}
-                    />                    
+                    />                     
                 }                                                                   
                 <Form.Control.Feedback type="invalid">
                     {error}
