@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import { Field, reduxForm } from 'redux-form';
+import { regex } from '../config/constants';
 import { Button, Col, Form, Image, Row, Spinner } from 'react-bootstrap';
 import InputForm from '../components/InputForm';
 import SelectForm from '../components/SelectForm';
@@ -88,6 +89,12 @@ const validate = (values) => {
 
     if (!values.name || values.name.trim().length === 0) {
         errors.name = 'Item name is required';
+    }
+
+    if (!values.quantity) {
+        errors.quantity = 'Item quantity is required';
+    } else if (!regex.numberInput.test(values.quantity)) {
+        errors.quantity = 'Invalid item quantity';
     }
 
     if (!values.unit || values.unit.trim().length === 0) {
