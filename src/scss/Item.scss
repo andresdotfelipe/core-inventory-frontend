@@ -74,5 +74,16 @@
                 justify-content: center;
             }
         }
+
+        @include phones {
+
+            .options {
+    
+                .btn-info, .btn-danger {
+                    margin: 35px 0;
+                    width: 105px;
+                }
+            }        
+        }
     }        
 }
