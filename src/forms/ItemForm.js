@@ -23,7 +23,7 @@ class ItemForm extends PureComponent {
                                 <Field name={'quantity'} component={InputForm} label={'Quantity'} type={'numeric'} />
                             </Form.Row>  
                             <Form.Row>
-                                <Field name={'unit'} component={InputForm} label={'Unit'} type={'text'} />
+                                <Field name={'unit'} component={InputForm} label={'Unit (e.g. unit(s), pair(s))'} type={'text'} />
                             </Form.Row>
                             <Form.Row>
                                 <Field 
