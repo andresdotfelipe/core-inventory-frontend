@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { Field, reduxForm } from "redux-form";
+import { Field, reduxForm } from 'redux-form';
 import { Button, Col, Form, Row, Spinner } from 'react-bootstrap';
 import InputForm from '../components/InputForm';
 
@@ -44,7 +44,7 @@ class LogInForm extends PureComponent {
     }
 }
 
-const mapStatToProps = (state, ownProps) => {    
+const mapStateToProps = (state, ownProps) => {    
     return {
         submitting: state.UserReducer.submitting
     };
@@ -67,6 +67,6 @@ const validate = (values) => {
     return errors;
 };
 
-LogInForm = connect(mapStatToProps)(LogInForm);
+LogInForm = connect(mapStateToProps)(LogInForm);
 
 export default reduxForm({ form: 'LogInForm', validate })(LogInForm);
