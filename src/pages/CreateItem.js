@@ -64,7 +64,7 @@ class CreateItem extends PureComponent {
                                 <Col className="item-form">
                                     <ItemForm 
                                         title={'Create item'}                                        
-                                        initialValues={{ quantity: 0 }}
+                                        initialValues={{ quantity: '0' }}
                                         categories={categories}
                                         fileRequired={true}
                                         submitItem={this.handleSubmitItem}

@@ -82,7 +82,7 @@ class EditItem extends PureComponent {
                                             msg={`You are editing item "${item.name}"`}                                        
                                             initialValues={{
                                                 name: item.name,
-                                                quantity: item.quantity,
+                                                quantity: String(item.quantity),
                                                 unit: item.unit,
                                                 categoryId: item.category_id,   
                                                 file: 'NULL'
