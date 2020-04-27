@@ -20,7 +20,15 @@
         .nav-link {
             font-size: 18px;
             margin: 0 15px 0 0;            
-        }        
+        }
+        
+        .navbar-toggler:focus {
+            outline: 0px auto;            
+        }
+
+        #basic-navbar-nav {
+            transition: 0.5s all;
+        }
     }
     
     .header-logged-out {
