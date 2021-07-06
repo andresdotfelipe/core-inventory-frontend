@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { logOut, removeSession } from '../actions/users';
 import { Button, Col, Nav, Navbar, Row } from 'react-bootstrap';
-import LogoImg from '../assets/images/logo.png';
+import Logo from '../assets/images/core-inventory-logo.svg';
 
 class Header extends PureComponent {    
 
@@ -44,7 +44,7 @@ class Header extends PureComponent {
                         <Row className="header-logged-out">            
                             <Col xs={12} className="brand">   
                                 <Link to="/" className="brand">
-                                    <img src={LogoImg} alt="Core Inventory" width="200px" />
+                                    <img src={Logo} alt="Core Inventory" width="200px" />
                                 </Link>
                             </Col>  
                         </Row>
