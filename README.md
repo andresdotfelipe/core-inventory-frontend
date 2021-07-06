@@ -1,6 +1,6 @@
 # Core Inventory (front-end)
 
-Core Inventory is a web application to manage inventory. This is the front-end for Core Inventory, built with:
+Core Inventory is a web application for inventory management. This is the front-end for Core Inventory, built with:
 
 * [React](https://reactjs.org) - To make the web appplication an SPA.
 * [Redux](https://redux.js.org) - To manage the state.
