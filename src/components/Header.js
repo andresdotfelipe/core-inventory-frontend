@@ -23,7 +23,7 @@ class Header extends PureComponent {
                         <React.Fragment>
                             <Navbar expand="lg" fixed="top">
                                 <Link to="/inventory" className="brand">
-                                    <img src={LogoImg} alt="Core Inventory" width="175px" />
+                                    <img src={Logo} alt="Core Inventory" width="175px" />
                                 </Link>
                                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                                 <Navbar.Collapse id="basic-navbar-nav">
