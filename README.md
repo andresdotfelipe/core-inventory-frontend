@@ -1,5 +1,13 @@
 # Core Inventory (front-end)
 
+<br>
+<br>
+<p align="center">
+    <img src="https://raw.githubusercontent.com/andresfelipedev/core-inventory-frontend/570554c0aceefdc50d100b8eaac0928ea5248829/src/assets/images/core-inventory-logo.svg" alt="Core Inventory" width="400">   
+</div>
+<br>
+<br>
+
 Core Inventory is a web application for inventory management. This is the front-end for Core Inventory, built with:
 
 * [React](https://reactjs.org) - To make the web appplication an SPA.
@@ -32,7 +40,7 @@ REACT_APP_IMAGES_UPLOAD_PRESET=tuj2xmmx
 
 ## Contributing
 
-Create a pull request to contribute this project. Open an issue to discuss major changes.
+Create a pull request to contribute to this project. Open an issue to discuss major changes.
 
 ## License
 
