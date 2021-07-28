@@ -5,9 +5,10 @@ const Footer = () => {
     return (
         <Row className="footer">
             <Col>
-                <a href={'https://andresfelipedev.github.io/portfolio'} target={'_blank'} rel={'noopener noreferrer'}>
-                    Web application created by Andrés Felipe Pérez Rodríguez
-                </a>
+                <a href={'https://andresfelipedev.github.io/resume/'} target={'_blank'} rel={'noopener noreferrer'}>
+                    <span>Created by Andrés Felipe Pérez Rodríguez</span>
+                    <i className="fas fa-external-link-alt"></i>
+                </a>                
             </Col>            
         </Row>                
     );
