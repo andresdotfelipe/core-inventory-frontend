@@ -36,7 +36,7 @@ class Header extends PureComponent {
                                         variant="outline-primary" 
                                         className="log-out-button" 
                                         onClick={this.handleLogOut}>
-                                        Log Out
+                                        Log out
                                     </Button>                    
                                 </Navbar.Collapse>
                             </Navbar>

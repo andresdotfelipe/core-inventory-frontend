@@ -19,7 +19,8 @@ class LandingPage extends PureComponent {
     }
 
     componentDidMount() {
-        this.props.getSession();             
+        this.props.getSession();
+        window.scrollTo(0, 0);             
     }    
     
     handleSubmitLogIn = (data) => {                

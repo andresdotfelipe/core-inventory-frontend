@@ -29,6 +29,7 @@ class Categories extends PureComponent {
         setCategory(null);
         getCategories();
         setPathname('/categories');
+        window.scrollTo(0, 0);
     }    
 
     handleEdit = () => {                

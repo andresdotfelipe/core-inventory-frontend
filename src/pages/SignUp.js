@@ -13,6 +13,7 @@ class SignUp extends PureComponent {
         const { getSession, setPathname } = this.props;
         getSession();
         setPathname('/signup');
+        window.scrollTo(0, 0);
     }
 
     handleSubmitSignUp = (data) => {
