@@ -24,7 +24,8 @@ class CreateItem extends PureComponent {
     componentDidMount() {   
         const { getCategories, setPathname } = this.props;
         getCategories();
-        setPathname('/create-item');        
+        setPathname('/create-item');
+        window.scrollTo(0, 0);        
     }  
 
     handleShowAlert = () => {

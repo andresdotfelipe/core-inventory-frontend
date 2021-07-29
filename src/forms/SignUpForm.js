@@ -15,7 +15,7 @@ class SignUpForm extends PureComponent {
                 <Row className="justify-content-center">                                
                     <Col xs={12} className="form">
                         <Form>
-                            <Form.Text className="form-title">Sign Up</Form.Text>
+                            <Form.Text className="form-title">Sign up</Form.Text>
                             <Form.Row>
                                 <Field component={InputForm} name={'name'} ph={'Username'} type={'text'} />
                             </Form.Row>
@@ -35,7 +35,7 @@ class SignUpForm extends PureComponent {
                                 </Button> :
                                 <Button type="submit" onClick={handleSubmit(submitSignUp)}>Next</Button>                                
                             }                            
-                            <Form.Text className="text-link">Already have an account? <Link to="/">Log In</Link> </Form.Text>               
+                            <Form.Text className="text-link">Already have an account? <Link to="/">Log in</Link> </Form.Text>               
                         </Form>
                     </Col>                
                 </Row>

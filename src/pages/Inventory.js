@@ -22,7 +22,8 @@ class Inventory extends PureComponent {
     componentDidMount() {
         const { getItems, setPathname } = this.props;
         getItems('showBy=unfiltered');                
-        setPathname('/inventory');          
+        setPathname('/inventory');
+        window.scrollTo(0, 0);          
     }        
 
     handleCategoriesModal = () => {

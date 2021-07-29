@@ -1,6 +1,14 @@
 # Core Inventory (front-end)
 
-Core Inventory is a web application to manage inventory. This is the front-end for Core Inventory, built with:
+<br>
+<br>
+<p align="center">
+    <img src="https://raw.githubusercontent.com/andresfelipedev/core-inventory-frontend/e690dffdf35c37acb594f997a5378d2be24570e6/src/assets/images/core-inventory-logo.svg" alt="Core Inventory" width="400">   
+</div>
+<br>
+<br>
+
+Core Inventory is a web application for inventory management. This is the front-end for Core Inventory, built with:
 
 * [React](https://reactjs.org) - To make the web appplication an SPA.
 * [Redux](https://redux.js.org) - To manage the state.
@@ -22,7 +30,7 @@ git clone https://github.com/andresfelipedev/core-inventory-frontend.git
 
 2. Run `npm install`.
 
-3. Create a `.env` file in the root directory with the next variables:
+3. Create a `.env` file in the root directory with the next environment variables:
 ```
 REACT_APP_IMAGES_CLOUD_NAME=dxjc7e5te
 REACT_APP_IMAGES_UPLOAD_PRESET=tuj2xmmx
@@ -32,7 +40,7 @@ REACT_APP_IMAGES_UPLOAD_PRESET=tuj2xmmx
 
 ## Contributing
 
-Create a pull request to contribute this project. Open an issue to discuss major changes.
+Create a pull request to contribute to this project. Open an issue to discuss major changes.
 
 ## License
 

@@ -6,11 +6,29 @@
     width: 100%;
 
     a {
-        color: $mako;
+        color: $mako;        
         text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    i {
+        bottom: 5px;
+        font-size: 14px;        
+        margin-left: 4px;
+        position: relative;
     }
 
     @include phones {
-        font-size: 11px;
+
+        span {
+            font-size: 14px;
+        }        
+
+        i {
+            font-size: 11px;
+        }
     }
 }
