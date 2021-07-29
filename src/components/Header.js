@@ -25,10 +25,14 @@ class Header extends PureComponent {
         window.removeEventListener('scroll', this.handleClickOutsideNavbar);
     }
 
-    // Closes Navbar if user clicks outside it.
+    // Closes Navbar if user clicks outside of it.
     handleClickOutsideNavbar = e => {
-        if ((e.clientX) >= e.target.clientWidth) return;
-        if (!this.Navbar.current.contains(e.target)) this.setState({ expandedNavbar: false });
+        const { session } = this.props;
+        // Checks if user is logged in.
+        if (session) {
+            if ((e.clientX) >= e.target.clientWidth) return;
+            if (!this.Navbar.current.contains(e.target)) this.setState({ expandedNavbar: false });
+        }
     };
 
     handleLogOut = () => {
