@@ -3,7 +3,7 @@ import { Link, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { setPathname } from '../actions/users';
 import { setItem, getItems, searchItem } from '../actions/items';
-import { Badge, Button, ButtonGroup, Col, Container, FormControl, InputGroup, Row} from 'react-bootstrap';
+import { Button, ButtonGroup, Col, Container, FormControl, InputGroup, Row} from 'react-bootstrap';
 import Loader from 'react-loader-spinner';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
