@@ -79,7 +79,7 @@ class EditItem extends PureComponent {
                                     <Col className="item-form">                                    
                                         <ItemForm 
                                             title={'Edit item'}
-                                            msg={`You are editing item "${item.name}"`}                                        
+                                            msg={`You are editing the item "${item.name}"`}                                        
                                             initialValues={{
                                                 name: item.name,
                                                 quantity: String(item.quantity),
