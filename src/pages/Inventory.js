@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { Redirect } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { setPathname } from '../actions/users';
 import { setItem, getItems, searchItem } from '../actions/items';
@@ -123,18 +123,22 @@ class Inventory extends PureComponent {
                             </div>
                             {
                                 items ? 
-                                <Row className="items-grid">                                              
+                                <Row className="items-grid justify-content-center">                                              
                                     {                                                
                                         items.map((item, index) => {
                                             return (                                    
-                                                <Col key={item.id} className="item-box" onClick={() => this.handleClickItem(item)}>
-                                                    <Col xs={12}>
-                                                        <img src={item.image_url} alt={item.name} />                                            
-                                                    </Col>
-                                                    <Col xs={12}>
-                                                        <Badge>{item.name}</Badge>
-                                                        <h6>{item.quantity} {item.unit}</h6>                                                   
-                                                    </Col>                                            
+                                                <Col xs={12} sm={6} md={4} lg={3} key={item.id} className="item-box-container">
+                                                    <Link to="#" onClick={() => this.handleClickItem(item)}>
+                                                        <Row className="item-box">
+                                                            <Col xs={12}>
+                                                                <img src={item.image_url} alt={item.name} />                                            
+                                                            </Col>
+                                                            <Col xs={12}>                                                                
+                                                                <p className="name">{item.name}</p>
+                                                                <p className="details">{item.quantity} {item.unit}</p>                                                   
+                                                            </Col>
+                                                        </Row>
+                                                    </Link>                                                                                                
                                                 </Col>                                                                        
                                             );
                                         })
