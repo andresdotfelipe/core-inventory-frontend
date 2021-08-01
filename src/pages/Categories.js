@@ -118,7 +118,7 @@ class Categories extends PureComponent {
                                                 Edit mode
                                             </Button>
                                             <Button 
-                                                variant="outline-primary" 
+                                                variant="outline-danger" 
                                                 onClick={this.handleDelete} 
                                                 active={this.state.activeDelete}>
                                                 Delete mode
