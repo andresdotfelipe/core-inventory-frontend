@@ -36,7 +36,7 @@ class Inventory extends PureComponent {
     }; 
 
     handleClickItem = (item) => {
-        const { setItem, setPathname, history } = this.props;
+        const { setItem, setPathname } = this.props;
         setItem(item);
         setPathname(`/items/${item.id}`);        
     };
