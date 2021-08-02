@@ -38,8 +38,7 @@ class Inventory extends PureComponent {
     handleClickItem = (item) => {
         const { setItem, setPathname, history } = this.props;
         setItem(item);
-        setPathname(`/items/${item.id}`);
-        history.push(`/items/${item.id}`);
+        setPathname(`/items/${item.id}`);        
     };
 
     render() {
@@ -125,10 +124,15 @@ class Inventory extends PureComponent {
                                 items ? 
                                 <Row className="items-grid justify-content-center">                                              
                                     {                                                
-                                        items.map((item, index) => {
+                                        items.map(item => {
                                             return (                                    
-                                                <Col xs={12} sm={6} md={4} lg={3} key={item.id} className="item-box-container">
-                                                    <Link to="#" onClick={() => this.handleClickItem(item)}>
+                                                <Col
+                                                    xs={12} sm={6} md={4} lg={3} 
+                                                    key={item.id} 
+                                                    className="item-box-container">
+                                                    <Link 
+                                                        to={`/items/${item.id}`}
+                                                        onClick={() => this.handleClickItem(item)}>
                                                         <Row className="item-box">
                                                             <Col xs={12}>
                                                                 <img src={item.image_url} alt={item.name} />                                            
