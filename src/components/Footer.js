@@ -6,7 +6,7 @@ const Footer = () => {
     <Row className="footer">
       <Col>
         <a
-          href={"https://andresdotfelipe.github.io/resume/"}
+          href={"https://github.com/andresdotfelipe"}
           target={"_blank"}
           rel={"noopener noreferrer"}
         >
