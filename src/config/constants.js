@@ -1,9 +1,9 @@
 /*
-    Production: https://coreinventoryapi.onrender.com/api
+    Production: https://coreinventoryapi.vercel.app/api
     Development: http://localhost:4000/api
 */
 export const config = {
-  api: "https://coreinventoryapi.onrender.com/api",
+  api: "https://coreinventoryapi.vercel.app/api",
 };
 
 /*
